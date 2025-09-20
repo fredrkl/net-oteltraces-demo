@@ -1,3 +1,8 @@
+# v1.0.0 (2025-09-20)
+
+## ✨ New Features
+- [`f0fd23d`](https://github.com/fredrkl/net-oteltraces-demo/commit/f0fd23d)  Starting on demo web api
+
 # [v1.3.0](https://github.com/fredrkl/template-base/compare/v1.2.0...v1.3.0) (2025-08-03)
 
 ## ✨ New Features
