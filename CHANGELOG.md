@@ -1,3 +1,8 @@
+# [v1.1.0](https://github.com/fredrkl/net-oteltraces-demo/compare/v1.0.0...v1.1.0) (2025-09-21)
+
+## ✨ New Features
+- [`14e9f0a`](https://github.com/fredrkl/net-oteltraces-demo/commit/14e9f0a)  OTel tracing
+
 # v1.0.0 (2025-09-20)
 
 ## ✨ New Features
