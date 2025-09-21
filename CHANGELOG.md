@@ -1,3 +1,8 @@
+# [v1.2.0](https://github.com/fredrkl/net-oteltraces-demo/compare/v1.1.0...v1.2.0) (2025-09-21)
+
+## ✨ New Features
+- [`4b8b6f1`](https://github.com/fredrkl/net-oteltraces-demo/commit/4b8b6f1)  Grafana and tempo docker compose
+
 # [v1.1.0](https://github.com/fredrkl/net-oteltraces-demo/compare/v1.0.0...v1.1.0) (2025-09-21)
 
 ## ✨ New Features
