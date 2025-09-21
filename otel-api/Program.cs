@@ -1,8 +1,22 @@
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddOpenTelemetry().WithTracing(tr =>
+{
+    tr.SetResourceBuilder(ResourceBuilder.CreateDefault().AddService("otel-api"));
+    tr.AddAspNetCoreInstrumentation();
+    tr.AddHttpClientInstrumentation();
+    tr.AddOtlpExporter(options =>
+    {
+      options.Protocol = OpenTelemetry.Exporter.OtlpExportProtocol.Grpc;
+      options.Endpoint = new Uri("http://otel-collector:4317");
+    });
+});
 
 var app = builder.Build();
 
